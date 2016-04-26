@@ -30,6 +30,8 @@ public class ApiExplorer {
         conn.setRequestProperty("Content-type", "application/json");
         out.println("Response code: " + conn.getResponseCode());
 
+        //test
+
         BufferedReader rd;
         if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300)
             rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
